@@ -4,14 +4,25 @@
 #define REGISTER_AMOUNT 7
 
 enum {
-	R0,
-	R1,
-	R2,
-	R3,
-	R4,
-	R5,
-	R6,
-	R7
+	imm = 0x01,
+	imm2 = 0x02,
+	imm4 = 0x04,
+	imm8 = 0x08,
+	imm16 = 0x16,
+	imm32 = 0x32,
+	imm64 = 0x64,
+	imm255 = 0xFF
+};
+
+enum {
+	R0 = 0x00,
+	R1 = 0x01,
+	R2 = 0x02,
+	R3 = 0x03,
+	R4 = 0x04,
+	R5 = 0x05,
+	R6 = 0x06,
+	R7 = 0x07
 };
 
 enum {

@@ -47,6 +47,7 @@ crX = Conditional Register X
 
 BASIC INSTRUCTIONS
 
+nop
 mov_i rX immX
 mov_r rX_1 rX_2
 push rX
