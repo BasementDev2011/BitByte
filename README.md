@@ -1,0 +1,1 @@
+BitByte is a virtual CPU architecture focused on flexibility, control, and total transparency.

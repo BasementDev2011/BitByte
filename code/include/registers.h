@@ -1,0 +1,32 @@
+#ifndef BIT_BYTE_REGISTERS_H
+#define BIT_BYTE_REGISTERS_H
+
+#define REGISTER_AMOUNT 7
+
+enum {
+	R0,
+	R1,
+	R2,
+	R3,
+	R4,
+	R5,
+	R6,
+	R7
+};
+
+enum {
+	GENERAL_WIDTH_REGISTER_SIZE = 8,
+	DOUBLE_EXTENDED_REGISTER_SIZE = 16,
+	QUAD_EXTENDED_REGISTER_SIZE = 32,
+	DQUAD_EXTENDED_REGISTER_SIZE = 64,
+	LONG_REGISTER_SIZE = 255
+};
+
+extern unsigned char gw_registers[REGISTER_AMOUNT][GENERAL_WIDTH_REGISTER_SIZE];
+extern unsigned char de_registers[REGISTER_AMOUNT][DOUBLE_EXTENDED_REGISTER_SIZE];
+extern unsigned char qe_registers[REGISTER_AMOUNT][QUAD_EXTENDED_REGISTER_SIZE];
+extern unsigned char dqe_registers[REGISTER_AMOUNT][DQUAD_EXTENDED_REGISTER_SIZE];
+
+/*840 Bytes*/
+
+#endif
